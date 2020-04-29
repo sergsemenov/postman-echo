@@ -12,13 +12,13 @@ class MobileBankApiTestPostmanEcho {
 // Предусловия
         given()
                 .baseUri("https://postman-echo.com")
-                .body("Ten o'clock postman") // отправляемые данные (заголовки и query можно выставлять аналогично)
+                .body("Ten o'clock postman Make me feel better") // отправляемые данные (заголовки и query можно выставлять аналогично)
 // Выполняемые действия
                 .when()
                 .post("/post")
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalToObject("Ten o'clock postman"));
+                .body("data", equalToObject("Ten o'clock postman Bring me her letter"));
     }
 }
